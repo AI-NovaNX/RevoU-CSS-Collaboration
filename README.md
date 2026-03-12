@@ -42,7 +42,7 @@ This project intentionally uses **pure web fundamentals**
 Explanation:
 
 - **index.html** → Main entry page of the website  
-- **style.css** → Main stylesheet for all styling rules  
+- **css/** → Folder containing stylesheets for all styling rules  
 - **assets/** → Folder containing images and icons used in the website  
 - **README.md** → Documentation of the project
 
