@@ -9,7 +9,7 @@ The goal of this project is to demonstrate a solid understanding of **fundamenta
 
 ## Preview
 
-![Portfolio](assets/preview.png)
+![Portfolio](assets/Preview.png)
 
 ---
 
@@ -51,7 +51,7 @@ To run this project locally, follow these steps:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/AI-NovaNX/RevoU-CSS-Collaboration/
+git clone https://github.com/AI-NovaNX/RevoU-CSS-Collaboration.git
 ```
 
 ---
