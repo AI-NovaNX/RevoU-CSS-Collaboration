@@ -1,6 +1,6 @@
 # Corporate Portfolio Website
 
-A simple **corporate portfolio website** using **native HTML and vanilla CSS**
+A simple **corporate portfolio website** using **native HTML and vanilla CSS**.
 This project was created to showcase personal information, skills, and projects in a clean layout without relying on any frameworks or external libraries.
  
 The goal of this project is to demonstrate a solid understanding of **fundamental web development concepts**, including semantic HTML structure, clean CSS styling, and responsive design.
