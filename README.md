@@ -1,9 +1,9 @@
 # Corporate Portfolio Website
 
-A simple **corporate portfolio website** using **native HTML and CSS**
+A simple **corporate portfolio website** using **native HTML and vanilla CSS**
 This project was created to showcase personal information, skills, and projects in a clean layout without relying on any frameworks or external libraries.
  
-The goal of this project is to demonstrate a solid understanding of **fundamental web development concepts**, including semantic HTML structure, and clean CSS styling.
+The goal of this project is to demonstrate a solid understanding of **fundamental web development concepts**, including semantic HTML structure, clean CSS styling, and responsive design.
 
 ---
 
@@ -19,8 +19,7 @@ The goal of this project is to demonstrate a solid understanding of **fundamenta
 - Clean and minimal user interface
 - Semantic HTML Structure
 - using aria-label in main navigation
-- Using Google Fonts : Inter and Charm
-- Sticky/absolute header using tranparent visual effect
+- Using Google Fonts : Inter
 - Using CSS Grid for Portfolio showcase section
 - Contact form using fieldset, legend, radio button for preferred contact method, dropdown reason for contact
 
@@ -52,7 +51,7 @@ To run this project locally, follow these steps:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Revou-FSSE-Feb26/milestone-1-AI-NovaNX.git
+git clone https://github.com/AI-NovaNX/RevoU-CSS-Collaboration/
 ```
 
 ---
@@ -60,7 +59,7 @@ git clone https://github.com/Revou-FSSE-Feb26/milestone-1-AI-NovaNX.git
 ### 2. Navigate to the project folder
 
 ```bash
-cd milestone-1-AI-NovaNX
+cd RevoU-CSS-Collaboration
 ```
 
 ---
@@ -78,6 +77,7 @@ For a better development experience you can also run the project using VS Code L
 This project focuses on strengthening the following skills:
 - Writing clean **semantic HTML**
 - Creating layouts using **CSS Flexbox and Grid**
+- Creating a responsive design web page
 - Organizing project structure properly
 - Understanding the **foundation of front-end development**
 
@@ -99,8 +99,6 @@ https://revou-fsse-feb26.github.io/milestone-1-AI-NovaNX/
 
 Possible improvements for future development:
 
-- Implement responsive design
-
 - Implement dark mode
 
 - Add JavaScript for interactivity
@@ -111,6 +109,4 @@ Possible improvements for future development:
 
 ## Author
 
-### Antonius Eko Indriarto
-
-A front-end developer learner who is passionate about building modern web interfaces and continuously improving web development skills.
+Our Team are front-end developer learners who is passionate about building modern web interfaces and continuously improving web development skills.
