@@ -3,7 +3,7 @@
 A simple **corporate portfolio website** using **native HTML and vanilla CSS**.
 
 This project was created to showcase personal information, skills, and projects in a clean layout without relying on any frameworks or external libraries.
- 
+
 The goal of this project is to demonstrate a solid understanding of **fundamental web development concepts**, including semantic HTML structure, clean CSS styling, and responsive design.
 
 ---
@@ -13,7 +13,6 @@ The goal of this project is to demonstrate a solid understanding of **fundamenta
 ![Portfolio](assets/Preview.png)
 
 ---
-
 
 ## Features
 
@@ -32,18 +31,18 @@ The goal of this project is to demonstrate a solid understanding of **fundamenta
 
 This project intentionally uses **pure web fundamentals**
 
-| Technology | Description |
-|-----------|-------------|
-| HTML5 | Structure of the web pages |
-| CSS3 | Styling, layout, and responsiveness |
-| Flexbox / Grid | Layout management |
-| @media query | For Responsive design |
+| Technology     | Description                         |
+| -------------- | ----------------------------------- |
+| HTML5          | Structure of the web pages          |
+| CSS3           | Styling, layout, and responsiveness |
+| Flexbox / Grid | Layout management                   |
+| @media query   | For responsive design               |
 
 Explanation:
 
-- **index.html** → Main entry page of the website  
-- **css/** → Folder containing stylesheets for all styling rules  
-- **assets/** → Folder containing images and icons used in the website  
+- **index.html** → Main entry page of the website
+- **css/** → Folder containing stylesheets for all styling rules
+- **assets/** → Folder containing images and icons used in the website
 - **README.md** → Documentation of the project
 
 ---
@@ -70,7 +69,7 @@ cd RevoU-CSS-Collaboration
 
 ### 3. Open the project
 
-Open ```index.html``` directly in your browser
+Open `index.html` directly in your browser
 
 For a better development experience you can also run the project using VS Code Live Server
 
@@ -79,6 +78,7 @@ For a better development experience you can also run the project using VS Code L
 ## Learning Goals
 
 This project focuses on strengthening the following skills:
+
 - Writing clean **semantic HTML**
 - Creating layouts using **CSS Flexbox and Grid**
 - Creating a responsive design web page
