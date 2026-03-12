@@ -37,6 +37,7 @@ This project intentionally uses **pure web fundamentals**
 | HTML5 | Structure of the web pages |
 | CSS3 | Styling, layout, and responsiveness |
 | Flexbox / Grid | Layout management |
+| @media query | For Responsive design |
 
 Explanation:
 
