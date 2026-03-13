@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tech. Corp. Portfolio</title>
+    <title>Challenge 1 - AI NovaNX</title>
 
     <!-- favicon -->
     <link rel="icon" href="./assets/images/favicon.ico" sizes="any" />
-    
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,18 +15,20 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- css link -->
-    <link rel="stylesheet" href="./css/index.css" />
-
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="./css/reset.css" />
+    <!- harus urutan pertama -->
+    <link rel="stylesheet" href="./css/style-A.css" />
+    <link rel="stylesheet" href="./css/style-B.css" />
+    <link rel="stylesheet" href="./css/style-C.css" />
   </head>
-  
   <body>
     <header>
       <!-- Navbar start -->
       <nav>
         <div class="navbar-container">
           <div class="logo">
-            <img src="./assets/images/Frame 1618873838.svg" alt="Logo Tech." />
+            <img src="assets/images/Tech.svg" alt="Logo Tech." />
           </div>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -35,6 +37,13 @@
             <li><a href="#team">Team</a></li>
           </ul>
           <a href="#contact" class="contact-btn">Contact Us</a>
+          <a
+            href="mobil-menu.html"
+            class="burger-menu"
+            aria-label="Open mobile menu"
+          >
+            <img src="assets/images/burger-menu.png" alt="Burger Menu Icon" />
+          </a>
         </div>
       </nav>
       <!-- Navbar end -->
@@ -45,7 +54,9 @@
       <section>
         <div class="hero-container">
           <div class="hero-text">
-            <h1 class="herotext-title">Build with the <em style="font-style: italic;">Future.</em></h1>
+            <h1 class="herotext-title">
+              Build with the <em style="font-style: italic">Future.</em>
+            </h1>
             <div class="herotext-content">
               <p>
                 From building sleek websites and mobile apps to integrating AI
@@ -251,7 +262,7 @@
           <form
             class="lets-collaborate-form-container"
             id="contact-form"
-            action="#"
+            action="https://formspree.io/f/xzdakekn"
             method="post"
           >
             <label for="name" class="name">Name</label>
@@ -297,5 +308,7 @@
       </div>
     </footer>
     <!-- Footer end-->
+
+    <script src="./js/contact-form.js" defer></script>
   </body>
 </html>
