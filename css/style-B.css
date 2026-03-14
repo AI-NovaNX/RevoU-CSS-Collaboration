@@ -28,3 +28,118 @@ body {
   background-color: var(--bg);
   color: #ffffff;
 }
+
+:root {
+  /* Theme color palette */
+  --primary: #421abc;
+  --bg: #000000;
+  /* Typography tokens */
+  --font-family-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+}
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg);
+  color: #ffffff;
+}
+#service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+}
+.what-we-do-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.what-we-do-text-title {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+}
+.what-we-do-text-content {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: gray;
+}
+.what-we-do-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+article.card {
+  padding: 30px 24px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 0.8px solid lightgray;
+}
+article.card p {
+  text-align: center;
+  font-size: 0.8rem;
+  color: lightgray;
+}
+#ourwork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+}
+.our-work-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.our-work-text-title {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+}
+.our-work-text-content {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: gray;
+}
+.our-work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.our-work-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media screen and (max-width: 468px) {
+  .what-we-do-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .our-work-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
