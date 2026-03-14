@@ -28,3 +28,44 @@ body {
   background-color: var(--bg);
   color: #ffffff;
 }
+
+:root {
+  /* Theme color palette */
+  --primary: #421abc;
+  --bg: #000000;
+
+  /* Typography tokens */
+  --font-family-body:
+    "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+}
+/*Reset CSS*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg);
+  color: #ffffff;
+}
+
+.meet-the-team-grid {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto;
+  gap: 32px 16px;
+  justify-items: center;
+}
