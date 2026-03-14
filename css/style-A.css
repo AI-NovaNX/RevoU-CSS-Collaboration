@@ -28,3 +28,484 @@ body {
   background-color: var(--bg);
   color: #ffffff;
 }
+
+/* Navbar styles */
+.navbar-container {
+  display: flex;
+  width: 1440px;
+  height: 84px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding-left: 140px;
+  padding-right: 140px;
+  align-items: center;
+  /* posisi header supaya tidak ikut terscroll */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  inset: 0;
+  z-index: 9999; /* supaya di atas konten lain */
+  /* efek blur pada navbar */
+  background-color: #00000099; /* warna latar belakang transparansi 60% */
+  backdrop-filter: blur(40px); /* efek blur pada latar belakang */
+}
+
+/*Logo */
+.logo {
+  width: 160px;
+  height: 36px;
+  margin-left: 0; /* jarak efektif kiri = padding-left navbar (140px) */
+  margin-right: 0;
+  object-fit: contain;
+}
+
+/* Tombol Menu/Navigation */
+.nav-links {
+  display: inline-flex;
+  width: 353px;
+  height: 36px;
+  gap: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  align-items: center;
+  font-size: 14px;
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-regular);
+  line-height: 28px;
+  font-color: #fdfdfd;
+  letter-spacing: 0%;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #fdfdfd;
+}
+
+/* Tombol Contact Us */
+.contact-btn {
+  display: flex;
+  width: 160px;
+  height: 44px;
+  margin-left: 0; /* biarkan space-between meratakan, agar nav-links center */
+  margin-right: 0; /* jarak efektif kanan = padding-right kontainer (140px) */
+  padding: 10px 20px;
+  color: #ffff;
+  background-color: var(--primary);
+  border-radius: 9999px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-family-body);
+  letter-spacing: -3%;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger-menu {
+  display: none; /* sembunyikan ikon burger pada desktop */
+}
+
+/* Hero Section */
+.hero-container {
+  display: flex;
+  width: 1440px;
+  height: 750px;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: row;
+  background-image: linear-gradient(
+    180deg,
+    #000000 17.55%,
+    rgba(33, 10, 94, 0.3)
+  );
+}
+
+.mobile-nav-links {
+  display: none; /* sembunyikan link navigasi ke menu mobile */
+}
+
+/* Container khusus Hero Text */
+.hero-text {
+  /*container hero-text */
+  width: 687px;
+  height: 282px;
+  /* border: 1px solid #181d27; buat cek keakuratan posisi dan ukuran saja */
+  margin-left: 140px;
+}
+
+.herotext-title {
+  width: 687px;
+  height: 68px;
+  /* border: 1px solid #181d27; buat cek keakuratan posisi dan ukuran saja*/
+  font-family: var(--font-family-body);
+  font-size: 56px;
+  line-height: 68px;
+  font-weight: var(--font-weight-bold);
+  font-color: #fdfdfd;
+  letter-spacing: -3%;
+}
+
+.herotext-content {
+  width: 687px;
+  height: 102px;
+  /* border: 1px solid #181d27; buat cek saja*/
+  margin-top: 16px;
+  font-family: var(--font-family-body);
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: var(--font-weight-regular);
+  color: #717680; /* ensure text color applies */
+  letter-spacing: 0; /* normalize to unitless zero */
+}
+
+/* Ensure the paragraph inside herotext-content inherits all typography */
+.herotext-content p {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+
+.lets-talk-button {
+  display: flex;
+  width: 300px;
+  height: 48px;
+  /* border: 1px solid #181d27; buat cek keakuratan posisi dan ukuran saja*/
+  margin-top: 48px;
+  padding: 10px 20px;
+  color: #ffff;
+  background-color: var(--primary);
+  border-radius: 9999px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-family-body);
+  letter-spacing: -3%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pengaturan layout gambar tangan pegang handphone */
+.image-tangan {
+  display: flex; /* agar konten di dalam bisa dirapikan ke bawah */
+  align-items: flex-end; /* posisi gambar di bawah (cross-axis) */
+  width: 595.22px;
+  height: 809px;
+  /* border: 1px solid #181d27; buat cek keakuratan posisi dan ukuran saja*/
+  margin-top: -809px;
+  margin-left: 704.78px;
+}
+
+/* Pastikan gambar di dalam .image-tangan mengikuti lebar container dan menempel bawah */
+.image-tangan img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  align-self: flex-end; /* jaga tetap di bawah jika ada perubahan alignment */
+}
+
+/* Who We Are Section */
+.who-we-are-container {
+  display: flex;
+  width: 1440px;
+  height: 332px;
+  padding-top: 80px;
+  padding-right: 140px;
+  padding-bottom: 80px;
+  padding-left: 140px;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: column;
+
+  /* border: 1px solid #181d27; buat cek keakuratan posisi dan ukuran saja */
+}
+
+.who-we-are-title {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-bold);
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  letterspacing: -3%;
+  font-color: #fdfdfd;
+}
+
+.who-we-are-text {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-semibold);
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -2%;
+  text-align: center;
+  color: #717680;
+}
+
+/* Mobile Design */
+@media screen and (max-width: 468px) {
+  .navbar-container {
+    width: 100%;
+    aspect-ratio: 394 / 64; /* menjaga rasio lebar:tinggi 394:64 */
+    height: auto; /* biar mengikuti aspect-ratio */
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .navbar-container .logo {
+    display: flex;
+    width: 65px;
+    height: 36px;
+    margin-left: 0; /* jarak efektif kiri = padding-left navbar (16px) */
+    margin-right: 0;
+  }
+
+  .navbar-container .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .navbar-container .nav-links {
+    display: none; /* sembunyikan link navigasi pada mobile */
+  }
+
+  .navbar-container .contact-btn {
+    display: none; /* sembunyikan tombol Contact Us pada mobile */
+  }
+
+  .navbar-container .burger-menu {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    margin-left: auto; /* dorong ikon ke kanan */
+    margin-right: 0; /* jarak efektif kanan = padding-right navbar (16px) */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-container .burger-menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .burger-menu {
+    text-decoration: none;
+  }
+
+  .burger-menu:link,
+  .burger-menu:visited {
+    text-decoration: none;
+  }
+
+  /* Hero (mobile) */
+  main > section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(
+      180deg,
+      #000000 15%,
+      rgba(33, 10, 94, 0.55)
+    );
+    overflow: hidden;
+  }
+
+  .hero-container {
+    width: 100%;
+    height: auto;
+    margin-top: 50px; /* jarak dari navbar */
+    padding: 56px 16px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: none;
+  }
+
+  .hero-text {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .herotext-title {
+    width: 100%;
+    height: auto;
+    font-size: 44px;
+    line-height: 54px;
+    letter-spacing: -0.03em;
+    color: #fdfdfd;
+  }
+
+  .herotext-content {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .lets-talk-button {
+    width: 100%;
+    height: 52px;
+    margin-top: 24px;
+  }
+
+  .image-tangan {
+    width: 100%;
+    height: auto;
+    margin: auto 0 0;
+    padding: 0 16px;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .image-tangan img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    align-self: center;
+    display: block;
+  }
+
+  /* About / Who We Are (mobile) */
+  .who-we-are-container {
+    width: 100%;
+    height: auto;
+    padding: 72px 16px 44px;
+    gap: 16px;
+  }
+
+  .who-we-are-title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    color: #fdfdfd;
+  }
+
+  .who-we-are-text {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    font-weight: var(--font-weight-medium);
+    max-width: 343px;
+    margin: 0 auto;
+  }
+
+/* Mobile menu layout */
+.mobile-nav-links {
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg);
+  width: 100vw;
+  height: 100vh;
+  padding: 16px 16px 32px;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.mobile-nav-title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--font-weight-regular);
+  color: #717680;
+  margin-bottom: 16px;
+}
+
+.mobile-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobile-nav-header .logo {
+  display: flex;
+}
+
+.mobile-nav-header .logo img {
+  width: 65px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+}
+
+.mobile-nav-header .x-closed-menu {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin-left: 0;
+  margin-right: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav-header .x-closed-menu img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.x-closed-menu {
+  text-decoration: none;
+}
+
+.x-closed-menu:link,
+.x-closed-menu:visited {
+  text-decoration: none;
+}
+
+.mobile-nav-links ul a:link,
+.mobile-nav-links ul a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.mobile-nav-links ul {
+  list-style: none;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.mobile-nav-links ul a {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: var(--font-weight-regular);
+}
+
+.contact-btn {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 361 / 48; /* menjaga rasio lebar:tinggi 361:48 */
+  height: auto; /* biar mengikuti aspect-ratio */
+  margin-top: 30px;
+  color: #ffff;
+  background-color: var(--primary);
+  border-radius: 9999px;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-family-body);
+  letter-spacing: 0%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+}
